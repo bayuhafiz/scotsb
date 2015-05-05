@@ -1537,6 +1537,7 @@ nav .cart .tag {
 }
 .promo-1 .left-content .vertical-align {
   padding-left: 40px;
+  padding-right:40px;
 }
 .promo-1 .right-content {
   background: #0054a6;
@@ -2337,13 +2338,13 @@ iframe {
   overflow: hidden;
 }
 .skills-wrapper .skill {
-  width: 50%;
+  width: 100%;
   float: left;
-  padding: 40px;
+  padding: 20px;
 }
 .skills-wrapper .skill i,
 .skills-wrapper .skill .number {
-  font-size: 48px;
+  font-size: 25px;
   color: #0054a6;
   line-height: 56px;
 }
@@ -3244,7 +3245,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -5210,7 +5211,7 @@ footer:nth-child(odd) {
 }
 .footer-3 .logo,
 .footer-4 .logo {
-  max-height: 30px;
+  max-height: 80px;
   display: inline-block;
   margin-right: 12px;
 }
