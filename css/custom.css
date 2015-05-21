@@ -72,6 +72,10 @@
     border: 10px solid white;
 }
 
+.br{
+	display: none;
+}
+
 @media(max-width: 768px){
 	.trident{
 		border-right: 10px solid white!important;
@@ -88,9 +92,22 @@
 		margin-top: 50px
 	}
 
+	.hero-slider .argyle-text {
+	  font-size: 25px!important;
+	  word-break: break-all!important;
+	}
+
 	.hero-slider .sauchiehall-text {
 	  font-size: 28px!important;
 	  word-break: break-all!important;
+	}
+
+	br{
+		display: block!important;
+	}
+
+	.br{
+		display: block;
 	}
 }
 
