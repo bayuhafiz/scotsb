@@ -109,5 +109,10 @@
 	.br{
 		display: block;
 	}
+
+	.fade_in_text{
+		height: 0px!important;
+		  margin-top: 228px!important;
+	}
 }
 
