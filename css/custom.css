@@ -87,4 +87,10 @@
 	.fade_in_text2{
 		margin-top: 50px
 	}
+
+	.hero-slider .sauchiehall-text {
+	  font-size: 28px!important;
+	  word-break: break-all!important;
+	}
 }
+
