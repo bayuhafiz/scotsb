@@ -42,6 +42,7 @@ $(document).ready(function(){
 	
 	$('.mobile-toggle').click(function(){
 		$('nav').toggleClass('open-menu');
+		
 	});
 		
 	// Append .background-image-holder <img>'s as CSS backgrounds
