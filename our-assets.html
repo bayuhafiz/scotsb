@@ -13,40 +13,7 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,700,400italic,500%7CMontserrat:400,700" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        	.shadow-box{
-        		  width: 100%;
-				  height: 100%;
-				  background: #000;
-				  opacity: 0.5;
-				  position: absolute;
-				  z-index: 1;
-				  top: 0;
-				  display: none;
-
-        	}
-        	.fade_in_text{
-        		position: relative;
-  				top: 45px;
-  				opacity: 0;
-  				z-index: 10;
-  				margin-top: 250px;
-  				margin-bottom: 250px;
-
-        	}
-
-        	.fade_in_text h5{
-        		font-size: 18px!important;
-        	}
-        	.fade_in_text p,.fade_in_text a{
-        		font-size: 20px!important;
-        		font-weight:300;
-        	}
-
-        	.fullscreen-projects .project{
-        		  border: 10px solid white;
-        	}
-        </style>
+        
     </head>
     <body>
 
@@ -55,7 +22,7 @@
 			
 			
 		
-			<nav class="nav-1 open-menu">
+			<nav class="nav-1">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -109,11 +76,11 @@
 			
 			<section class="no-pad fullscreen-projects">
 		
-				<div class="project col-sm-6 image-holder" style="border-right:0">
+				<div class="project hero-project1 col-sm-6 image-holder b-r-0 trident">
 					<div class="background-image-holder bg-holder" >
 						<img alt="Project Image" class="background-image" src="img/tridenthouse3.jpg">
 					</div>
-					<div class="hover-state text-center">
+					<!--<div class="hover-state text-center">
 						<a href="trident-house.html" class="vertical-align">
 							<div class="hover-content">
 								<div class="detail-line"></div>
@@ -122,14 +89,25 @@
 								<i class="icon arrow_right"></i>
 							</div>
 						</a>
-					</div>
+					</div>-->
+					<div class="container fade_in_text1">
+							<a href="trident-house.html">
+								<div class="col-md-5 col-sm-7 asset-align">
+									<div class="detail-line"></div>
+									<h5 class="text-white">TRIDENT HOUSE</h5>
+									<h4 class="text-white">Prominent 5,000 sq m commercial and office building strategically located 1 mile from Glasgow Airport.&nbsp;</h4>
+									<i class="icon arrow_right text-white"></i>
+								</div>
+							</a>
+						</div>
+					<div class="shadow-box1"></div>
 				</div>
 			
-				<div class="project col-sm-6 image-holder">
+				<div class="project hero-project2 col-sm-6 image-holder">
 					<div class="background-image-holder">
 						<img alt="Project Image" class="background-image" src="img/sauchiehall1.jpg">
 					</div>
-					<div class="hover-state text-center">
+					<!--<div class="hover-state text-center">
 						<a href="sauchiehall-street.html" class="vertical-align">
 							<div class="hover-content">
 								<div class="detail-line"></div>
@@ -138,7 +116,21 @@
 								<i class="icon arrow_right"></i>
 							</div>
 						</a>
+					</div>-->
+
+					<div class="container fade_in_text2">
+						<div class="row">
+							<a href="sauchiehall-street.html">
+								<div class="col-md-5 col-sm-7 asset-align">
+									<div class="detail-line"></div>
+									<h5 class="text-white">SAUCHIEHALL STREET</h5>
+									<h4 class="text-white">Prime high street space with 24 rooms offered as student accommodation.</h4>
+									<i class="icon arrow_right text-white"></i>
+								</div>
+							</a>
+						</div>
 					</div>
+					<div class="shadow-box2"></div>
 				</div>
 			
 			</section>			
@@ -186,6 +178,37 @@
     			$('.hero-project').mouseleave(function () {
     				$('.shadow-box').css('display','none');
     				$('.fade_in_text').animate({
+    					'top':'45px',
+    					'opacity':'0'
+    				});
+    			});
+
+
+    			$('.hero-project1').mouseenter(function () {
+    				$('.shadow-box1').css('display','block');
+    				$('.fade_in_text1').animate({
+    					'top':'0',
+    					'opacity':'1'
+    				});
+    			});
+    			$('.hero-project1').mouseleave(function () {
+    				$('.shadow-box1').css('display','none');
+    				$('.fade_in_text1').animate({
+    					'top':'45px',
+    					'opacity':'0'
+    				});
+    			});
+
+    			$('.hero-project2').mouseenter(function () {
+    				$('.shadow-box2').css('display','block');
+    				$('.fade_in_text2').animate({
+    					'top':'0',
+    					'opacity':'1'
+    				});
+    			});
+    			$('.hero-project2').mouseleave(function () {
+    				$('.shadow-box2').css('display','none');
+    				$('.fade_in_text2').animate({
     					'top':'45px',
     					'opacity':'0'
     				});
